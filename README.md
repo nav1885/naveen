@@ -1,6 +1,6 @@
-# Naveen H
+# Naveen H Gowda
 
-Profile site for Naveen H, Engineering Manager.
+Profile site for Naveen H Gowda, Engineering Manager.
 
 Dark, bold, minimal, large-type, single-page **tabbed** site (Home · Résumé · Projects · Contact). No build step; plain HTML/CSS/JS with a hash-based tab router.
 
