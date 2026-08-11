@@ -2,7 +2,7 @@
 
 Profile site for Naveen H, Engineering Manager.
 
-Dark, bold, minimal, large-type, single-page **tabbed** site (Home · Résumé · Projects · Contact) — no build step, plain HTML/CSS/JS with a hash-based tab router.
+Dark, bold, minimal, large-type, single-page **tabbed** site (Home · Résumé · Projects · Contact). No build step; plain HTML/CSS/JS with a hash-based tab router.
 
 ## Run locally
 

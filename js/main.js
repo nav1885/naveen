@@ -1,5 +1,5 @@
 /* =========================================================
-   Naveen H — profile  ·  tab router + project data
+   Naveen H profile  ·  tab router + project data
    ========================================================= */
 
 const CAP_MODE = location.search.includes("cap");
@@ -10,7 +10,7 @@ const PROJECTS = [
   {
     name: "VoxRider", commits: 116, feature: true,
     tagline: "Hear the traffic behind you.",
-    desc: "Connects to a Garmin Varia RTL515 bike radar over Bluetooth and speaks traffic alerts straight into your earbuds — “2 vehicles, high speed”, “Clear”. Hands-free, eyes-free situational awareness for road cyclists.",
+    desc: "Connects to a Garmin Varia RTL515 bike radar over Bluetooth and speaks traffic alerts straight into your earbuds: “2 vehicles, high speed”, “Clear”. You keep your eyes on the road and still know what's coming up behind you.",
     badges: [
       { type: "live", label: "Live on App Store" },
       { type: "android", label: "Android (soon)" },
@@ -28,7 +28,7 @@ const PROJECTS = [
   {
     name: "Veloscape", commits: 53, feature: true,
     tagline: "Trail whisperer.",
-    desc: "An AI riding companion for cyclists — pick a ride mode, get a live map debrief, and break down your performance with segment-by-segment analysis. Built for road and mountain riders alike.",
+    desc: "An AI riding companion for cyclists. Pick a ride mode, get a live map debrief, and break down your performance segment by segment. Built for both road and mountain riders.",
     badges: [
       { type: "ios", label: "iOS" },
       { type: "android", label: "Android" },
@@ -44,7 +44,7 @@ const PROJECTS = [
   {
     name: "TickerLite", meta: "Live · iOS + Android",
     tagline: "Your stocks, on alert.",
-    desc: "A lightweight stock-watcher — search tickers, follow live quotes and charts, and set price alerts that ping you the moment a stock crosses your target. Backed by a real-time market-data service running on its own cloud backend.",
+    desc: "A lightweight stock watcher: search tickers, follow live quotes and charts, and set price alerts that ping you the moment a stock crosses your target. Runs on its own real-time market-data backend in the cloud.",
     shots: [
       "assets/projects/tickerlite/01-home.png",
       "assets/projects/tickerlite/02-detail.png",
@@ -60,7 +60,7 @@ const PROJECTS = [
   {
     name: "Signal Grid", meta: "In development · Garmin",
     tagline: "Your whole day, one glance.",
-    desc: "A premium watch face for Garmin AMOLED watches — bold stacked time surrounded by six customizable data slots: heart rate, body battery, stress, VO2 max, and more. Seven accent themes, configured right on the wrist with the native editor, with a burn-in-safe always-on mode.",
+    desc: "A watch face for Garmin AMOLED watches: bold stacked time surrounded by six customizable data slots for heart rate, body battery, stress, VO2 max, and more. Seven accent themes, configured right on the wrist with the native editor, plus a burn-in-safe always-on mode.",
     shots: [
       "assets/projects/signalgrid/01-hero.jpg",
       "assets/projects/signalgrid/03-custom.jpg",
@@ -75,7 +75,7 @@ const PROJECTS = [
   {
     name: "RepSense", meta: "In development · Garmin", glyph: "×8",
     tagline: "Reps, counted honestly.",
-    desc: "An on-watch strength-training tracker for Garmin. It auto-counts reps from the wrist accelerometer, shows a per-set confidence dot instead of pretending when a count can't be trusted, and makes corrections a two-second fix. One press to start lifting — sets, rest timing, and workout recording are automatic.",
+    desc: "An on-watch strength-training tracker for Garmin. It auto-counts reps from the wrist accelerometer, shows a per-set confidence dot instead of pretending when a count can't be trusted, and makes corrections a two-second fix. One press to start lifting; sets, rest timing, and workout recording are automatic.",
     badges: [
       { type: "ai", label: "Connect IQ · Monkey C" },
       { type: "web", label: "Signal processing" }
@@ -84,7 +84,7 @@ const PROJECTS = [
   {
     name: "MicroMoment", commits: 36,
     tagline: "Five minutes a day.",
-    desc: "A focused habit tracker built on one idea: small, daily, done. A hard cap of 5 active habits, 1–5 minutes each, one daily check-in. Fully local-first — SQLite on device, no account, no sync.",
+    desc: "A focused habit tracker built on one idea: small, daily, done. A hard cap of 5 active habits, 1–5 minutes each, one daily check-in. Fully local: SQLite on device, no account, no sync.",
     shots: [
       "assets/projects/micromoment/01-home.png",
       "assets/projects/micromoment/02-habit.png"
@@ -176,7 +176,7 @@ function setTab(name, push = true) {
   if (name === "home") panel.querySelectorAll(".stat__num[data-count]").forEach(animateCount);
   if (push && location.hash.slice(1) !== name) history.replaceState(null, "", name === "home" ? "#" : "#" + name);
   document.title = name === "home"
-    ? "Naveen H — Engineering Manager"
+    ? "Naveen H · Engineering Manager"
     : name[0].toUpperCase() + name.slice(1) + " · Naveen H";
 }
 

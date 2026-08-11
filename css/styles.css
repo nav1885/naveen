@@ -1,5 +1,5 @@
 /* =========================================================
-   Naveen H — profile
+   Naveen H profile
    Dark · bold · minimal · large type · TAB-based (no long scroll)
    ========================================================= */
 
@@ -84,7 +84,7 @@ strong { color: var(--fg); font-weight: 600; }
 .panel.is-active { animation: panelIn .55s var(--ease) both; }
 @keyframes panelIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
 .wrap { max-width: var(--maxw); margin: 0 auto; padding: clamp(2.5rem, 6vw, 4.5rem) var(--pad) 5rem; }
-/* Résumé & Projects tabs run wider — ~70% of page on large screens, never narrower than other tabs */
+/* Résumé & Projects tabs run wider: ~70% of page on large screens, never narrower than other tabs */
 #panel-resume .wrap,
 #panel-projects .wrap { max-width: max(var(--maxw), 72vw); }
 
@@ -147,7 +147,7 @@ strong { color: var(--fg); font-weight: 600; }
 .link-tab:hover { color: var(--accent); }
 .hero__actions { display: flex; flex-wrap: wrap; gap: .8rem; }
 
-/* profile portrait — portrait card + offset geometric "cube" block behind */
+/* profile portrait: portrait card + offset geometric "cube" block behind */
 .hero__portrait {
   position: relative; margin: 0; justify-self: center;
   width: 100%; max-width: 510px; aspect-ratio: 4 / 5;
