@@ -58,18 +58,45 @@ const PROJECTS = [
     store: "https://apps.apple.com/app/id6775094738"
   },
   {
-    name: "Signal Grid", meta: "In development · Garmin",
-    tagline: "Your whole day, one glance.",
-    desc: "A watch face for Garmin AMOLED watches: bold stacked time surrounded by six customizable data slots for heart rate, body battery, stress, VO2 max, and more. Seven accent themes, configured right on the wrist with the native editor, plus a burn-in-safe always-on mode.",
+    name: "Kestrel", meta: "Live · Garmin",
+    tagline: "An instrument panel for your wrist.",
+    desc: "A paid watch face for Garmin AMOLED watches: stacked time on a machined honeycomb panel, twin configurable battery gauges, a swappable centre dial, and eleven accent colours that carry through the whole face. Sold on the Connect IQ store.",
     shots: [
-      "assets/projects/signalgrid/01-hero.jpg",
-      "assets/projects/signalgrid/03-custom.jpg",
-      "assets/projects/signalgrid/02-cyan.jpg",
-      "assets/projects/signalgrid/04-aod.jpg"
+      "assets/projects/kestrel/01-hero.jpg",
+      "assets/projects/kestrel/02-pink.jpg"
     ],
     badges: [
+      { type: "live", label: "Live on Connect IQ" },
       { type: "ai", label: "Connect IQ · Monkey C" },
       { type: "web", label: "AMOLED always-on" }
+    ],
+    store: "https://apps.garmin.com/apps/93178b7c-ae43-4f95-be25-b94990b8c396"
+  },
+  {
+    name: "GunnerFace", meta: "Live · Garmin",
+    tagline: "London is red.",
+    desc: "An Arsenal matchday tribute in deep red, brass, and champions' gold: a big Oswald clock flanked by the trophy and the cannon, live heart rate, steps, and calories along the bottom, and the Emirates skyline behind it all. An unofficial fan project, start to finish.",
+    shots: [
+      "assets/projects/gunnerface/01-fenix.jpg",
+      "assets/projects/gunnerface/02-venu3.jpg"
+    ],
+    badges: [
+      { type: "live", label: "Live on Connect IQ" },
+      { type: "ai", label: "Connect IQ · Monkey C" }
+    ],
+    store: "https://apps.garmin.com/apps/550ec541-2ed6-4e93-a6a1-4b955c3db26f"
+  },
+  {
+    name: "SendIt!", meta: "Live · Garmin",
+    tagline: "Big air, bigger clock.",
+    desc: "A mountain-bike watch face for Garmin: a rider sending it over snow-capped peaks up top, an oversized clock in the middle, and three changeable dials below for VO2 max, heart rate, recovery, and friends. Everything else stays true black to spare the AMOLED battery.",
+    shots: [
+      "assets/projects/sendit/01-fenix.jpg",
+      "assets/projects/sendit/02-venu3.jpg"
+    ],
+    badges: [
+      { type: "live", label: "Live on Connect IQ" },
+      { type: "ai", label: "Connect IQ · Monkey C" }
     ]
   },
   {
@@ -116,7 +143,7 @@ function cardHTML(p) {
   const repo = p.repo
     ? `<a href="${p.repo}" target="_blank" rel="noopener" class="card__link card__link--repo">View repo ↗</a>` : "";
   const store = p.store
-    ? `<a href="${p.store}" target="_blank" rel="noopener" class="card__link card__link--store">App Store ↗</a>` : "";
+    ? `<a href="${p.store}" target="_blank" rel="noopener" class="card__link card__link--store">${p.store.includes("garmin") ? "Connect IQ" : "App Store"} ↗</a>` : "";
   return `
     <article class="card ${p.feature ? "is-feature" : ""} reveal">
       ${visual}
