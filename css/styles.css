@@ -113,7 +113,7 @@ strong { color: var(--fg); font-weight: 600; }
 }
 .hero__name {
   font-family: var(--font-display); font-weight: 700; white-space: nowrap;
-  font-size: clamp(3.4rem, 18.5vw, 20rem); line-height: .82; letter-spacing: -.045em;
+  font-size: clamp(2rem, 10.5vw, 11.5rem); line-height: .82; letter-spacing: -.045em;
   margin: 0 0 clamp(1.6rem,4vw,3rem);
 }
 .hero__body {
@@ -182,7 +182,7 @@ strong { color: var(--fg); font-weight: 600; }
 }
 @media (max-width: 860px) {
   .hero__body { grid-template-columns: 1fr; gap: 2.2rem; }
-  .hero__name { font-size: clamp(2.8rem, 15vw, 6rem); }
+  .hero__name { font-size: clamp(1.6rem, 8.6vw, 3.4rem); }
   .hero__portrait { order: -1; max-width: 280px; justify-self: start; margin-bottom: 1rem; }
   .blob { opacity: .16; }
 }
